@@ -6,10 +6,13 @@
 [My FreeCodeCamp Portfolio](https://www.freecodecamp.org/alfiyusrina)
 ## 1. Comment Your Code
 
-```js
+```
+js
 // this is my first comment
 /* this is a multi line comment */
-```
+``/* This is a
+multi-line comment */
+// This is an in-line comment.`
 
 ## 2. Declare Variables
 ```js
