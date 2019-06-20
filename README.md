@@ -29,8 +29,7 @@
 | :warning: | coaches | homework has a few issues, see comments and keep in touch on a new issue |
 | :shipit: | coaches | there's an answer to your question, in the comments and/or an issue  | 
 | :star2: | coaches | you did something awesome |
-
-| :wavy_dash: | student | started, in progress  |
+| :wavy_dash: | Kelemu | started, in progress  |
 ---
 
 ## priority guide
