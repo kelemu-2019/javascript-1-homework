@@ -19,7 +19,7 @@
 
 | emoji | who uses it | meaning |
 | --- | --- | --- |
-|  :wavy_dash: | student | started, in progress  | 
+|  :wavy_dash: | kelemu | started, in progress  | 
 | :question: | student | need help (after asking your fellow students!) | 
 | :white_check_mark: | student | you think it's done, check please! | 
 | :white_check_mark: | coaches | homework is checked and OK |
