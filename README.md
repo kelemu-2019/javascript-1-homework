@@ -22,7 +22,7 @@
 
 | emoji | who uses it | meaning |
 | --- | --- | --- |
-|  :wavy_dash: | student | started, in progress  | 
+| :wavy_dash: | student | started, in progress  | 
 | :question: | student | need help (after asking your fellow students!) | 
 | :white_check_mark: | student | you think it's done, check please! | 
 | :white_check_mark: | coaches | homework is checked and OK |
@@ -30,6 +30,7 @@
 | :shipit: | coaches | there's an answer to your question, in the comments and/or an issue  | 
 | :star2: | coaches | you did something awesome |
 
+| :wavy_dash: | student | started, in progress  |
 ---
 
 ## priority guide
