@@ -24,6 +24,11 @@ var myName;
 a = 7;
 b = a;
 a = b;
+
+a=7;
+b=a;
+a=b
+
 ```
 
 ## 4. Initializing Variables with the Assignment Operator
