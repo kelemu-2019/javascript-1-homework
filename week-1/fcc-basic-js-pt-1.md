@@ -34,6 +34,9 @@ a=b
 ## 4. Initializing Variables with the Assignment Operator
 ```js
 var a = 9;
+var a = 9;
+var b=10;
+var myvar=0;
 ```
 
 ## 5. Understanding Uninitialized Variables
@@ -41,9 +44,23 @@ var a = 9;
 var a = 5;
 var b = 10;
 var c = "I am a";
+
+var a=5;
+var b=10;
+var c="I am a";
 ```
 ## 6. Understanding Case Sensitivity in Variables
 ```js
+// Declarations
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+// Assignments
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
+
 // Declarations
 var studlyCapVar;
 var properCamelCase;
@@ -59,17 +76,25 @@ titleCaseOver = 9000;
 ```js
 var sum = 10 + 0;
 sum = 10 + 10;
+
+var sum = 10 + 10;
 ```
 ## 8. Subtract One Number from Another
 ```js
+var difference = 45 - 33;
+
 var difference = 45 - 33;
 ```
 ## 9. Multiply Two Numbers
 ```js
 var product = 8 * 10;
+
+var product = 8 * 10;
 ```
 ## 10. Divide One Number by Another (/)
 ```js
+var quotient = 66 / 33;
+
 var quotient = 66 / 33;
 ```
 ## 11 .Increment a Number (i++)
@@ -77,10 +102,15 @@ var quotient = 66 / 33;
 ```js
 var myVar = 87;
 myVar++;
+
+myVar++;
+myVar=88
 ```
 
 ## 12. Decrement a Number (i--)
 ```js
+myVar--;
+
 myVar--;
 ```
 
@@ -88,27 +118,40 @@ myVar--;
 ## 13. Create Decimal Numbers
 ```js
 var myDecimal = 8.8;
+
+var myDecimal=9.873;
 ```
 
 ## 14. Multiply Two Decimals
 ```js
+var product = 2.0 * 2.5;
+
 var product = 2.0 * 2.5;
 ```
 
 ## 15. Divide One Decimal by Another
 ```js
 var quotient = 4.4 / 2.0;
+
+var quotient = 4.4 / 2.0;
 ```
 ## 16. Finding a Remainder
 ```js
 var remainder;
 remainder = 11 % 3;
+
+remainder=11%3;
+remainder=2;
 ```
 ## 17. Compound Assignment With Augmented Addition (+=)
 ```js
 a += 12;
 b += 9;
 c += 7;
+
+a  +=12;
+b  +=9;
+c  +=7;
 ```
 ## 18. Compound Assignment With Augmented Subtraction (-=)
 
@@ -116,18 +159,33 @@ c += 7;
 a -= 6;
 b -= 15;
 c -= 1;
+
+a -= 6;
+b  -=15;
+c  -= 1;
 ```
 ## 19. Compound Assignment With Augmented Multiplication
 ```js
 a *= 5;
 b *= 3;
 c *= 10;
+
+a *= 5;
+b *= 3;
+c  *=10;
+
+
 ```
 ## 20. Compound Assignment With Augmented Division
 ```js
 a /= 12;
 b /= 4;
 c /= 11;
+
+a /= 12;
+b /= 4;
+c /= 11;
+
 ```
 
 ## 21. Declare String Variables
@@ -135,6 +193,9 @@ with  ``` " "  ```
 ```js
 var myFirstName = "Alfi";
 var myLastName = "Yusrina";
+
+var myFirstName="kelemu";
+var myLastName="Gebeyehu";
 ```
 
 ## 22. Escaping Literal Quotes in Strings
