@@ -202,6 +202,8 @@ var myLastName="Gebeyehu";
 Using *backlash* ```\``` in the beginning and in the end of your quotes.
 ```js
 var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; 
 ```
 ## 23. Quoting Strings with Single Quotes
 String values in JS may be written with single or double quotes.
@@ -216,55 +218,94 @@ Reasons to use escaping characters:
 
 ```js
 var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine';
+
+var myStr='FirstLine\n\t\\SecondLine\nThirdLine'; // Change this line
+
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 ```
 
 ## 25. Concatenating Strings with Plus Operator
 ```js
 var myStr = "This is the start. " +  "This is the end.";
+
+var myStr="This is the start. "+"This is the end.";
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 ```
 ## 26. Concatenating Strings with the Plus Equals Operator
 ```js
 var myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
+
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+
 ```
 ## 27. Constructing Strings with Variables
 ```js
 var myStr = "My name is " + myName + " and I am well!";
+
+var myName="kelemu";
+var myStr= "My name is " + myName  + " and I am well!"  ;
 ```
 ## 28. Appending Variables to Strings
 ```js
 var someAdjective = "boring";
 var myStr = "Learning to code is ";
 myStr += someAdjective;
+
+var someAdjective="Is it easy ";
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+
 ```
 ## 29. Find the Length of a String
 ```js
 lastNameLength = lastName.length;
+
+lastNameLength = lastName.length;
 ```
 ## 30. Use Bracket Notation to Find the First Character in a String
 ```js
+firstLetterOfLastName = lastName[0];
+
 firstLetterOfLastName = lastName[0];
 ```
 ## 31. Understand String Immutability
 String values are *immutable*, means that they cannot be altered once created.
 ```js
 myStr = "Hello World";
+
+
+myStr = "Hello World";
 ```
 ## 32. Use Bracket Notation to Find the Nth Character in a String
 ```js
+var thirdLetterOfLastName = lastName[2];
+
 var thirdLetterOfLastName = lastName[2];
 ```
 ## 33. Use Bracket Notation to Find the Last Character in a String
 Use  ```.length-1```
 ```js
 var lastLetterOfLastName = lastName[lastName.length-1];
+
+var lastLetterOfLastName = lastName[lastName.length-1];
 ```
 ## 34. Use Bracket Notation to Find the Nth-to-Last Character in a String
 ```js
 var secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+var secondToLastLetterOfLastName = lastName[lastName.length-2];
 ```
 ## 35. Word Blanks
 ```js
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+  var result = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+  return result;
+}
+wordBlanks("cat", "little", "hit", "slowly");
+
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
   return result;
@@ -275,33 +316,46 @@ wordBlanks("cat", "little", "hit", "slowly");
 Array variables for storing several pieces of data in one place.
 ```js
 var myArray = ["Alfi", 28];
+
+var myArray = ["kelemu",21];
 ```
 ## 37. Nest one Array within Another Array
 ```js
 var myArray = [["Bulls", 23], ["White Sox", 45]];
+
+var myArray = [["computer",2019],['software,2018']];
 ```
 ## 39. Modify Array Data With Indexes
 ```js
 myArray[0] = 45;
+var myData=myArray[0];
+myArray[0]=45;
 ```
 ## 40. Access Multi-Dimensional Arrays With Indexes
 ```js
+var myData = myArray[2][1];
+
 var myData = myArray[2][1];
 ```
 ## 41. Manipulate Arrays With push()
 Adding an extra to the last array.
 ```js
 myArray.push(["dog", 3]);
+ myArray.push(["dog", 3]);
 ```
 ## 42. Manipulate Arrays With pop()
 You can pop off the last array, and store it in a variable.
 ```js
 var removedFromMyArray = myArray.pop();
+
+var removedFromMyArray=myArray.pop();
 ```
 ## 43. Manipulate Arrays With shift()
 removing the first in the array
 ```js
 var removedFromMyArray = myArray.shift();
+
+var removedFromMyArray=myArray.shift();
 ```
 ## 44. Manipulate Arrays With unshift()
 Adding an extra to the first in the array.
@@ -310,15 +364,26 @@ var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 
 myArray.unshift(["Paul",35]);
+
+myArray.unshift( ["Paul",35])
 ```
 ## 45. Shopping List
 ```js
 var myList = [["rice", 5] , ["bread", 6] , ["cake", 7], [ "quinoa", 9], ["potato", 20]];
+
+var myList = [["bread",2],["rise",5],["oniown",5],["orange",10],["sope",3]];
+
 ```
 ## 46. Write Reusable JavaScript with Functions
 ```js
 function reusableFunction() {
   console.log("Hi World");
+}
+
+reusableFunction();
+
+unction reusableFunction(){
+    console.log("Hi World");
 }
 
 reusableFunction();
@@ -330,6 +395,11 @@ console.log(a + b);
 }
 functionWithArgs (1 , 2);
 functionWithArgs (7 , 9);
+
+function functionWithArgs(a,b){
+  console.log(a+b);
+}
+functionWithArgs(5,9);
 ```
 ## 48. Global Scope and Functions
 Scope refers to the visibility of variables.
@@ -340,11 +410,39 @@ var myGlobal = 10;
 function fun1() {
   oopsGlobal = 5;
 }
+
+// Declare your variable here
+ var myGlobal=10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+   oopsGlobal=5;
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
 ```
 ## 49. Local Scope and Functions
 ```js
 function myLocalScope() {
 var myVar = 'use strict';
+}
+myLocalScope();
+
+function myLocalScope() {
+  'use strict'; // you shouldn't need to edit this line
+  var myVar;
+  console.log(myVar);
+  
 }
 myLocalScope();
 ```
@@ -356,6 +454,20 @@ function myOutfit() {
   return outerWear;
 }
 myOutfit();
+
+// Setup
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+  var outerWear = "sweater";
+  
+  
+  // Only change code above this line
+  return outerWear;
+}
+
+myOutfit();
 ```
 ## 51. Return a Value from a Function with Return
 Use a ```return``` statement to send a value back out of a function.
@@ -366,12 +478,25 @@ function timesFive (num) {
 timesFive(5);
 timesFive(2);
 timesFive(0);
+
+function timesFive(mul){
+  return mul * 5;
+}
+
+console.log(timesFive(2));
 ```
 ## 52. Understanding Undefined Value returned from a Function
 ```js
 function addFive() {
   sum = sum + 5;
 }
+
+var sum=5;
+function addFive(){
+ sum=sum+5;
+}
+
+
 ```
 ## 53. Assignment with a Returned Value
 ```js
