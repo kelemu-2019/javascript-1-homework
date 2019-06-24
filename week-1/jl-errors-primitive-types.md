@@ -23,9 +23,9 @@ SyntaxError: '' string literal contains an unescaped line break
 ```
 classification:
 * creation phase or execution phase ?
+
 * syntax or semanitc ?
 
-*
 creation phase  and Synatx
 the fix:
 ```js
@@ -45,16 +45,19 @@ let innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
 ```
 error message:
 ```
+SyntaxError: fields are not currently supported
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
+creation and syntax
 the fix:
 ```js
+let innerHtml = '<p>"Click here to" <a href="#Home">return home</a></p>';
 ```
 your notes:
-
+ improper uses of single  and double quet
 [TOP](#errors)
 
 ---
@@ -67,16 +70,19 @@ let nested_messages = 'remind yourself ''i can do this!'' at least once a day';
 ```
 error message:
 ```
+ unexpected token: string literal
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
+* 
 the fix:
 ```js
+let nested_messages = "remind yourself '\i can do this!'\ at least once a day";
 ```
 your notes:
-
+Misplaced used of single and double quets
 [TOP](#primitive-type-errors)
 
 ___
