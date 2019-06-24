@@ -19,13 +19,17 @@ two lines';
 ```
 error message:
 ```
+SyntaxError: '' string literal contains an unescaped line break
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
+*
+creation phase  and Synatx
 the fix:
 ```js
+let a = 'this is \"two lines\"';
 ```
 your notes:
 
