@@ -518,12 +518,29 @@ function nextInLine(arr, item) {
   arr.push(item);
   return  arr.shift();
 }
+
+function nextInLine(arr, item) {
+  // Your code here
+ arr.push(item);
+ item= arr.shift();
+  return item;  // Change this line
+}
+
+// Test Setup
+var testArr = [1,2,3,4,5];
+
+// Display Code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
 ```
 ## 55. Understanding Boolean Values
 ```js
 function welcomeToBooleans() {
 return true;
 }
+
+return true; // Change this line
 ```
 ## 56. Use Conditional Logic with If Statements
 ```js
@@ -534,6 +551,28 @@ function trueOrFalse(wasThatTrue) {
   return "No, that was false";
 }
 trueOrFalse(true);
+
+function trueOrFalse(wasThatTrue) {
+    if(wasThatTrue){
+        return "Yes, that was true";
+        
+    }
+    return "No, that was false";
+}
+
+// Change this value to test
+trueOrFalse(true);
+
+// Setup
+function testEqual(val) {
+  if (val==12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+testEqual(10);
 ```
 ## 57. Comparison with the Equality Operator
 ```js
@@ -544,6 +583,17 @@ function testEqual(val) {
   return "Not Equal";
 }
 testEqual(12);
+
+// Setup
+function testStrict(val) {
+  if (val===7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+testStrict(10);
 ```
 ## 58. Comparison with the Strict Equality Operator
 However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
@@ -557,6 +607,17 @@ function testStrict(val) {
   return "Not Equal";
 }
 testStrict(10);
+
+// Setup
+function compareEquality(a, b) {
+  if (a === "b") { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+// Change this value to test
+compareEquality(10, "10");
 ```
 ## 59. Practice comparing different values
 ```js
@@ -577,6 +638,17 @@ function testNotEqual(val) {
   return "Equal";
 }
 testNotEqual(10);
+
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
+testNotEqual(10);
 ```
 ## 61. Comparison with the Strict Inequality Operator
 ```js
@@ -587,6 +659,22 @@ function testStrictNotEqual(val) {
   return "Equal";
 }
 
+testStrictNotEqual(10);
+
+// Setup
+function testStrictNotEqual(val) {
+  // Only Change Code Below this Line
+  
+  if (val !==17) {
+
+  // Only Change Code Above this Line
+
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+// Change this value to test
 testStrictNotEqual(10);
 ```
 ## 62. Comparison with the Greater Than Operator
@@ -603,6 +691,21 @@ function testGreaterThan(val) {
   return "10 or Under";
 }
 
+testGreaterThan(10);
+
+function testGreaterThan(val) {
+  if (val > 100) {  // Change this line
+    return "Over 100";
+  }
+  
+  if (val> 10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+// Change this value to test
 testGreaterThan(10);
 ```
 ## 63. Comparison with the Greater Than Or Equal To Operator
@@ -621,6 +724,21 @@ function testGreaterOrEqual(val) {
 
 
 testGreaterOrEqual(10);
+
+function testGreaterOrEqual(val) {
+  if (val>=20) {  // Change this line
+    return "20 or Over";
+  }
+  
+  if (val>=10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+// Change this value to test
+testGreaterOrEqual(10);
 ```
 ## 64. Comparison with the Less Than Operator
 ```js
@@ -636,6 +754,21 @@ function testLessThan(val) {
   return "55 or Over";
 }
 
+testLessThan(10);
+
+function testLessThan(val) {
+  if (val < 25) {  // Change this line
+    return "Under 25";
+  }
+  
+  if (val< 55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+// Change this value to test
 testLessThan(10);
 ```
 ## 65. Comparison with the Less Than Or Equal To Operator
@@ -654,9 +787,37 @@ function testLessOrEqual(val) {
 
 testLessOrEqual(10);
 
+function testLessOrEqual(val) {
+  if (val <= 12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
+  
+  if (val <=24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+// Change this value to test
+testLessOrEqual(10);
+
+
 ```
 ## 66. Comparison with the Logical And Operator
 ```js
+function testLogicalAnd(val) {
+
+  if (val >= 25 && val <= 50) {
+      return "Yes";
+  }
+
+  return "No";
+}
+
+
+testLogicalAnd(10);
+
 function testLogicalAnd(val) {
 
   if (val >= 25 && val <= 50) {
@@ -684,6 +845,20 @@ function testLogicalOr(val) {
 
 
 testLogicalOr(15);
+
+function testLogicalOr(val) {
+  // Only change code below this line
+
+  if (val  >20 || val <10) {
+    return "Outside";
+  }
+
+  // Only change code above this line
+  return "Inside";
+}
+
+// Change this value to test
+testLogicalOr(15);
 ```
 ## 68. Introducing Else Statements
 
@@ -706,6 +881,25 @@ function testElse(val) {
 
 testElse(4);
 
+function testElse(val) {
+  var result = "";
+  // Only change code below this line
+  
+  if (val > 5) {
+    result = "Bigger than 5";
+  }
+  
+else {
+    result = "5 or Smaller";
+  }
+  
+  // Only change code above this line
+  return result;
+}
+
+// Change this value to test
+testElse(4);
+
 ```
 ## 69. Introducing Else If Statements
 ```js
@@ -725,6 +919,23 @@ function testElseIf(val) {
 
 testElseIf(7);
 
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  }
+  
+  else if (val < 5) {
+    return "Smaller than 5";
+  }
+  else{
+  return "Between 5 and 10";
+  }
+}
+
+// Change this value to test
+testElseIf(7);
+
+
 ```
 ## 70. Logical Order in If Else Statements
 ```js
@@ -738,6 +949,19 @@ function orderMyLogic(val) {
   }
 }
 
+orderMyLogic(7);
+
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+
+// Change this value to test
 orderMyLogic(7);
 ```
 ## 71. Chaining If Else Statements
@@ -758,6 +982,36 @@ return "Large";
 
 }
 
+testSize(7);
+
+function testSize(num) {
+  // Only change code below this line
+  if(num<5){
+    return "Tiny"
+  }
+  
+  else if(num<10){
+    return "Small"
+  }
+
+  else if (num<15){
+     return "Medium" 
+  }
+
+   else if (num<20){
+     return "Large" 
+  }
+
+   else if (num>= 20){
+     return "Huge" 
+  }
+  else{
+  return "Change Me";
+  }
+  // Only change code above this line
+}
+
+// Change this value to test
 testSize(7);
 ```
 ## 72. Golf Code
@@ -783,6 +1037,42 @@ return "Hole-in-one!";
   }
 }
 
+golfScore(5, 4);
+
+var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1){
+    return names[0];
+  }
+  else if (strokes<= par-2){
+    return names[1];
+  }
+
+   else if (strokes<= par-1){
+    return names[2];
+  }
+  
+   else if (strokes<= par){
+    return names[3];
+  }
+  
+   else if (strokes<= par+1){
+    return names[4];
+  }
+  
+   else if (strokes<= par+2){
+    return names[5];
+  }
+  
+  else {
+    return names[6];
+  }
+ 
+  // Only change code above this line
+}
+
+// Change these values to test
 golfScore(5, 4);
 ```
 
