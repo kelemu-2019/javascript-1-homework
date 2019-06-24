@@ -19,12 +19,16 @@ let a = 1:
 error message:
 ```
 Uncaught SyntaxError: Unexpected token :
+SyntaxError: unexpected token: ':'
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
+It is creation phase and
+syntax
 the fix:
+let a= 1;
 ```js
 ```
 your notes:
