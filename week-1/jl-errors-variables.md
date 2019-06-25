@@ -39,7 +39,7 @@ function getNine() {
 let result = getNine();
 ```
 your notes:
-
+Function declered without parentacies
 [TOP](#function-errors)
 Mising Parentecise (improper function decleration)
 ---
