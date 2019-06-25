@@ -23,6 +23,11 @@ You'll be given a bunch of variables with the wrong value assigned and a tempora
 1. [the second](https://goo.gl/KvayUU)
 ```js
 // your solution here
+_=a;
+6	a=b;
+7	b=c;
+8	c=d;
+9	d=_;
 ```
 1. [the third](https://goo.gl/WXXtV7)
 ```js
