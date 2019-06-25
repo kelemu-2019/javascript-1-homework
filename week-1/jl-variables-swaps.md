@@ -49,6 +49,12 @@ _=a;
 1. [the fifth](https://goo.gl/gDaKNi)
 ```js
 // your solution here
+	_ = a;
+7	a = e;
+8	e = b;
+9	b= d;
+10	d =e;
+11	e = _;
 ```
 
 ___
