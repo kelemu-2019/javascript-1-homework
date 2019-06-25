@@ -32,10 +32,19 @@ _=a;
 1. [the third](https://goo.gl/WXXtV7)
 ```js
 // your solution here
+7	a=b;
+8	b=c;
+9	c=d;
+10	d=_;
 ```
 1. [the fourth](https://goo.gl/nTA1DG)
 ```js
 // your solution here
+7	a=d;
+8	d=b;
+9	b=c;
+10	c=d;
+11	d=_
 ```
 1. [the fifth](https://goo.gl/gDaKNi)
 ```js
