@@ -2,14 +2,14 @@
 
 |  | your Emoji | your comments | coach emoji | coach comments |
 | --- | --- | --- | --- | --- |
-| :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` | :white_check_mark: | it need a lot practice |  | |
+| :seedling: __[fcc basics](./fcc-basic-js-pt-1.md)__: through ```Counting Cards``` | :white_check_mark: | it need a lot practice | :white_check_mark: | |
 | :dash: __[fcc debugging](./fcc-debugging.md)__ | | | | |
-| :seedling: __[errors: formatting](./jl-errors-formatting.md)__ |  :white_check_mark:| | | |
-| :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ |  :white_check_mark:| | | |
-| :seedling: __[errors: variables](./jl-errors-variables.md)__ | :white_check_mark:| | | |
+| :seedling: __[errors: formatting](./jl-errors-formatting.md)__ |  :white_check_mark:| | :white_check_mark: | |
+| :seedling: __[errors: primitives](./jl-errors-primitive-types.md)__ |  :white_check_mark:| | :white_check_mark: | |
+| :seedling: __[errors: variables](./jl-errors-variables.md)__ | :white_check_mark:| | :white_check_mark: | |
 | :seedling: __[varibales: swaps](./jl-variables-swaps.md)__ |  :white_check_mark:| | | |
-| :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | | | | |
-| :seedling: __[how functions work](./jl-functions.md)__ |:white_check_mark: | | | |
+| :dash: __[variables: multiple assignments](./jl-variables-multiple.md)__ | | | :warning: | the fourth solution is not correct |
+| :seedling: __[how functions work](./jl-functions.md)__ |:white_check_mark: | | :warning: | where are your solutions? |
 | :dash: __[functions: turtle shuffle](./jl-turtle-shuffle.md)__ | | | | |
 
 ---
