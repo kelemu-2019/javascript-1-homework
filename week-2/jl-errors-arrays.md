@@ -15,16 +15,20 @@
 broken code:
 ```js
 let myArray = [1, 2, 3;
+
 ```
 error message:
 ```
+ Unexpected token ;
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
 
+it is creation phase and syntax error
 the fix:
 ```js
+  let myArray = [1, 2, 3];
 ```
 your notes:
 
@@ -40,13 +44,15 @@ let myArray = [1, 2 3];
 ```
 error message:
 ```
+Unexpected number
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
-
+creation phase and syntax and semanitc
 the fix:
 ```js
+let myArray = [1, 2, 3];
 ```
 your notes:
 
@@ -66,13 +72,15 @@ let myArray = [
 ```
 error message:
 ```
+redeclaration of let myArray
 ```
 classification:
 * creation phase or execution phase ?
 * syntax or semanitc ?
-
+creation phase and Syntax 
 the fix:
 ```js
+let otherName = [[1, 2, 3], [4, 5, 6], [7, 8, 9] ];
 ```
 your notes:
 
